@@ -1,0 +1,93 @@
+:root {
+    --clr-primary: #D928F2;
+    --clr-secondary: #8B96E5;
+    --clr-blue: #34B4CE;
+    --clr-white: #fff;
+    --clr-black: #000;
+  }
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*======== Global Styles =========*/
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+  
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--clr-white);
+  padding: 0.5rem;
+  display: block;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+/*======== HERO SECTION =========*/
+
+.hero-image {
+    height: 100%;
+}
+
+.hero-image-container {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.hero-nav-bar-logo {
+    width: 290px;
+   
+}
+
+.hero-nav-bar .preorderBotton {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    padding: 0.5rem 1rem;
+}
+
+.hero-nav-bar a:hover{
+    background-color: transparent;
+    border: solid 1px var(--clr-secondary);
+}
+
+.hero-text-gta6logo {
+    width: 350px;
+}
+ 
+.hero-text {
+    height: 90%;
+    width: 100%;
+    color: white;
+    
+}
+
+
+/*======== PARTNERS SECTION =========*/
+/*========== FAQ SECTION ============*/
+/*======== FOOTER SECTION =========*/
+
+
+
+
