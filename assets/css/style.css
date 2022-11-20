@@ -4,8 +4,8 @@
     --clr-blue: #34B4CE;
     --clr-white: #fff;
     --clr-black: #000;
-  }
-  
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,28 +34,43 @@ strong {
 
 /*======== Global Styles =========*/
 
-body, html {
-  padding: 0;
-  margin: 0;
-  height: 100%;
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 button {
     border: none;
     outline: none;
 }
-  
+
 ul {
-  list-style-type: none;
-  display: flex;
+    list-style-type: none;
+    display: flex;
 }
 
 nav a {
-  text-decoration: none;
-  color: var(--clr-white);
-  padding: 0.5rem;
-  display: block;
+    text-decoration: none;
+    color: var(--clr-white);
+    padding: 0.5rem;
+    display: block;
 }
+
+
+/*======== CONTAINER =========*/
+
+.c-container {
+    max-width: 1200px;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
+
+.c-container--sm {
+    max-width: 870px;
+}
+
 
 /*======== HERO SECTION =========*/
 
@@ -79,7 +94,7 @@ nav a {
 
 .hero-nav-bar-logo {
     width: 290px;
-   
+
 }
 
 .preorderBotton {
@@ -89,7 +104,7 @@ nav a {
     padding: 0.5rem 1rem;
 }
 
-.hero-nav-bar a:hover{
+.hero-nav-bar a:hover {
     background-color: transparent;
     border: solid 1px var(--clr-secondary);
 }
@@ -97,12 +112,12 @@ nav a {
 .hero-text-gta6logo {
     width: 300px;
 }
- 
+
 .hero-text {
     height: 90%;
     width: 100%;
     color: white;
-    padding: 3rem;   
+    padding: 3rem;
 }
 
 .hero-text-title {
@@ -110,10 +125,126 @@ nav a {
 }
 
 
+/*======== VIDEO SECTION =========*/
+
+.c-section-video {
+    padding: 6.4rem 0;
+    background: linear-gradient(180.08deg, rgba(0, 0, 0, 0.75) 33.91%, rgba(0, 0, 0, 0.688029) 54.75%, rgba(0, 0, 0, 0.579688) 68.85%, rgba(0, 0, 0, 0) 99.93%), url('../images/gta6-video-bg.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c-section-video__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-section-video__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--clr-white);
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.c-section-video__title span {
+    color: var(--clr-secondary);
+}
+
 /*======== PARTNERS SECTION =========*/
+
+.c-section-partner {
+    padding: 6.4rem 0;
+    background: linear-gradient(180deg, #D928F2 0%, rgba(217, 40, 242, 0.49) 100%);
+}
+
+.c-section-partner__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--clr-white);
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.c-section-partner__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.c-section-partner__item {
+    max-width: 22rem;
+    width: 100%;
+}
+
+/*========== Version SECTION ============*/
+
+.c-section-version {
+    padding: 6.4rem 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 72.92%, rgba(217, 40, 242, 0.9) 100%);
+}
+
+.c-section-version__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--clr-secondary);
+    text-align: left;
+    margin-bottom: 3.2rem;
+}
+
 /*========== FAQ SECTION ============*/
+
+.c-section-faq {
+    padding: 6.4rem 0;
+    background: linear-gradient(180deg, rgba(217, 40, 242, 0.49) 0%, rgba(217, 40, 242, 0.39) 100%);
+}
+
+.c-section-faq__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--clr-white);
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+
 /*======== FOOTER SECTION =========*/
 
+.c-footer {
+    background: linear-gradient(180deg, rgba(217, 40, 242, 0.39) 0%, #34B4CE 100%);
+    padding: 4.8rem 0 1.6rem 0;
+}
 
+.c-footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+}
 
+.c-footer__social {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
 
+.c-footer__social-item {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+}
+
+.c-footer__social-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.c-footer__mention {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
