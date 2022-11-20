@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTA 6 - Landing Page</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo2.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/gta-6.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,54 +19,52 @@
 </head>
 
 <body>
-
-    <!--************* HERO SECTION ***************-->
-    <section class="hero-image">
-        <div class="hero-image-container">
-            <div class="hero-nav-bar">
-                <div>
-                    <a href="#" aria-label="Acceder à Rockstar Games">
-                        <img src="assets/images/logo/rockstar-games.svg" alt="rockstar games" class="hero-nav-bar-logo"
-                            srcset="" alt="Logo rockstar" width="52" height="52">
-                    </a>
-                    <img src="assets/images/logo/gta-6-logotype.svg" alt="" srcset="">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Versions</a></li>
-                        <li><a href="#">Fonctionnalités</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </nav>
-                <select name="lang" id="lang">
-                    <option value="fr">Fr</option>
-                    <option value="eng">Eng</option>
-                </select>
-                <button type="button" class="preorderBotton">Précommander</button>
-            </div>
-            <div class="hero-text">
-                <img src="assets/images/logo/gta-6.svg" alt="Logo de GTA 6" class="hero-text-gta6logo">
-                <div class="">
-                    <h1 class="hero-text-title">Sortie prévue le 01 Janvier 2023</h1>
-                    <div id="countdown">
-                        <ul>
-                            <li><span id="days"></span>JOURS</li>
-                            <li><span id="hours"></span>HEURES</li>
-                            <li><span id="minutes"></span>MINUTES</li>
-                            <li><span id="seconds"></span>Secondes</li>
-                        </ul>
+    <main>
+            <!--************* HERO SECTION ***************-->
+            <section class="hero-image">
+                <div class="hero-image-container">
+                    <div class="hero-nav-bar">
+                        <div>
+                            <a href="#" aria-label="Acceder à Rockstar Games">
+                                <img src="assets/images/logo/rockstar-games.svg" alt="rockstar games" class="hero-nav-bar-logo-rockstar"
+                                    srcset="" alt="Logo rockstar" width="52" height="52">
+                            </a>
+                            <img src="assets/images/logo/gta-6-logotype.svg" alt="Logo de GTA 6" class="hero-nav-bar-logo" srcset="">
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Versions</a></li>
+                                <li><a href="#">Fonctionnalités</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <select name="lang" id="lang">
+                                <option value="fr">Fr</option>
+                                <option value="eng">Eng</option>
+                            </select>
+                            <button type="button" class="preorderBotton">Précommander</button>
+                        </div>
+                    </div>
+                    <div class="hero-text">
+                        <img src="assets/images/logo/gta-6.svg" alt="Logo de GTA 6" class="hero-text-gta6logo">
+                        <div class="">
+                            <h1 class="hero-text-title">Sortie prévue le 01 Janvier 2023</h1>
+                            <div id="countdown">
+                                <ul>
+                                    <li><span id="days"></span>JOURS</li>
+                                    <li><span id="hours"></span>HEURES</li>
+                                    <li><span id="minutes"></span>MINUTES</li>
+                                    <li><span id="seconds"></span>Secondes</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="preorderBotton">Précommander</button>
                     </div>
                 </div>
-                <button type="button" class="preorderBotton">Précommander</button>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <body>
-
-
-        <main>
+            <!--*************  VIDEO SECTION ***************-->
             <section>
                 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/MUvwkA7O0e8"
@@ -74,6 +72,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </section>
+
+            <!--************* PREORDER SECTION ***************-->
             <section>
                 <h2>Précommandez dès maintenant</h2>
                 <div>
@@ -106,15 +106,27 @@
                 </div>
             </section>
 
-            <section>
-                <h2>Nos Partenaires</h2>
-            </section>
 
+            <!--************* PARTNERS SECTION ***************-->
+            <section class="partners-section">
+                <h2 class="section-title">Nos Partenaires</h2>
+                <div class="partners-logos">
+                    <img src="assets/images/partners/nividia.png" alt="Logo de Nividea">
+                    <img src="assets/images/partners/rog.png" alt="Logo de ROG">
+                    <img src="assets/images/partners/logitech.png" alt="Logo de Logitech">
+                    <img src="assets/images/partners/cooler-master.png" alt="Logo de Cooler Master">
+                    <img src="assets/images/partners/gigabyte.png" alt="Logo de Gigabyte">
+                    <img src="assets/images/partners/Intel.png" alt="Logo de Intel">
+                </div>
+            </section>
+            
+            <!--************* FAQ SECTION ***************-->
             <section>
                 <h2>FAQ</h2>
             </section>
         </main>
-
+        
+        <!--************* FOOTER SECTION ***************-->
         <footer>
             <div>
                 <div>
@@ -162,6 +174,5 @@
         </footer>
 
         <script src="assets/script/script.js"></script>
-    </body>
-
+</body>
 </html>
