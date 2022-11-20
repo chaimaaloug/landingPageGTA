@@ -45,7 +45,7 @@ nav a {
 
 .hero-image-container {
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero/background.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,9 +62,10 @@ nav a {
    
 }
 
-.hero-nav-bar .preorderBotton {
+.preorderBotton {
     background-color: var(--clr-primary);
     color: var(--clr-white);
+    font-weight: bold;
     padding: 0.5rem 1rem;
 }
 
@@ -82,6 +83,10 @@ nav a {
     width: 100%;
     color: white;
     padding: 3rem;   
+}
+
+.hero-text-title {
+    margin: 1rem 0;
 }
 
 
