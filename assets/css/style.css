@@ -142,13 +142,27 @@ nav a {
 /*======== INTRO SECTION =========*/
 
 .c-section-intro {
-    padding: 6.4rem 0;
+    padding: 6.4rem 0 0;
     background: linear-gradient(180deg, rgba(25, 25, 25, 0.9) 50.31%, rgba(36, 36, 36, 0.9) 99.35%);
     color: var(--clr-white);
 }
 
+.c-section-intro__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .c-section-intro__title {
+    position: relative;
     font-size: 3.2rem;
+    font-weight: 700;
+    align-self: flex-start;
+    padding-bottom: 6.4rem;
+}
+
+.c-section-intro__title::after {
+    position: absolute;
 }
 
 /*======== VIDEO SECTION =========*/
