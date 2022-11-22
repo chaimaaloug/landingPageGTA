@@ -1,6 +1,5 @@
 
 /*======== COUNTDOWN TIMER =========*/
-
 (function () {
     const second = 1000,
           minute = second * 60,
@@ -41,5 +40,17 @@
 
 
 /*========= FAQ LIST ==========*/
+const toggles = document.querySelectorAll('.c-faq-toggle');
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active');
+    });
+});
+
+
+/*======== AGE VERIFICATION ==========*/
+
+
+
 
 /*======== RESPONSIVE MENU ===========*/

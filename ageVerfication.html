@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/gta-6.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Londrina+Solid:wght@300;400;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/verification.css">
+    <title>GTA 6 - Age Verification</title>
+</head>
+<body>
+    <main>
+        <section class="c-section-verification">
+            <div class="c-container">
+                <h2 class="c-section-verification__title">Vérification d'Age</h2>  
+                <p class="c-section-verification__text">Vous devez avoir 18 ans ou plus pour visiter ce site Web. Votre âge sera vérifié à la caisse.</p>
+                <form>
+                    <fieldset>
+                        <legend class="c-form__text">Veuillez entrer votre date de naissance :</legend>
+                        <div class="c-form__container">
+                            <div>
+                                <input type="number" step="1" id="day" min="1" max="31" maxlength="2" placeholder="Jour" required />
+                            </div>
+                            <div>
+                                <input type="number" step="1" id="month" min="1" max="12" maxlength="2" placeholder="Mois" required />
+                            </div>
+                            <div>
+                                <input type="number" step="1" id="year" min="1900" max="1901" maxlength="4" placeholder="Année" required />
+                            </div>
+                            <button type="button" class="c-validate-btn">Valider</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <a href="index.html" class="c-exit-link">Exit</a>            
+            </div>
+        </section>
+    </main>
+    <script src="assets/script/scripts.js"></script>
+</body>
+</html>

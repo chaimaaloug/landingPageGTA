@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTA 6 - Landing Page</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo/gta-6.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Londrina+Solid:wght@300;400;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <title>GTA 6 - Landing Page</title>
 </head>
 
 <body>
@@ -60,7 +60,7 @@
                             </ul>
                         </div>
                     </div>
-                    <button type="button" class="preorderBotton">Précommander</button>
+                    <button type="button" class="preorderBotton" id="open-modal">Précommander</button>
                 </div>
             </div>
         </section>
@@ -91,60 +91,151 @@
             </div>
         </section>
 
-        <section class="c-section-overview">
+
+
+
+        <!--************* PARTNERS SECTION ***************-->
+        <section class="c-section-partner">
             <div class="c-container">
-                <h2>Game Overview</h2>
-                <ul class="c-section-overview__items-wrapper">
-                    <li class="c-section-overview__item">
-                        <img src="assets/images/overview/overview-1.jpg" alt="" srcset="">
-                        <div class="c-section-overview__content">
-                            <h3>OPEN WORLD MULTIPLAYER</h3>
-                            <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
-                                cult followers. In the biggest Far Cry release ever, you'll have everything at
-                                your disposal – from hired guns to hired fangs and the baddest arsenal this side
-                                of the Mississippi.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="c-section-overview__item c-section-overview--reverse">
-                        <div class="c-section-overview__content">
-                            <h3>A WORLD THAT HITS BACK</h3>
-                            <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
-                                cult followers. In the biggest Far Cry release ever, you'll have everything at
-                                your disposal – from hired guns to hired fangs and the baddest arsenal this side
-                                of the Mississippi.
-                            </p>
-                        </div>
-                        <img src="assets/images/overview/overview-2.jpg" alt="" srcset="">
-                    </li>
-                    <li class="c-section-overview__item">
-                        <img src="assets/images/overview/overview-3.jpg" alt="" srcset="">
-                        <div class="c-section-overview__content">
-                            <h3>ACTIVITIES</h3>
-                            <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
-                                cult followers. In the biggest Far Cry release ever, you'll have everything at
-                                your disposal – from hired guns to hired fangs and the baddest arsenal this side
-                                of the Mississippi.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="c-section-overview__item c-section-overview--reverse">
-                        <div class="c-section-overview__content">
-                            <h3>OPEN WORLD MULTIPLAYER</h3>
-                            <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
-                                cult followers. In the biggest Far Cry release ever, you'll have everything at
-                                your disposal – from hired guns to hired fangs and the baddest arsenal this side
-                                of the Mississippi.
-                            </p>
-                        </div>
-                        <img src="assets/images/overview/overview-4.jpg" alt="" srcset="">
-                    </li>
-                </ul>
+                <h2 class="c-section-partner__title">Nos Partenaires</h2>
+                <div class="c-section-partner__list">
+                    <div class="c-section-partner__item">
+                        <img src="assets/images/partners/nvidia.svg" alt="Logo de Nividea" srcset="">
+                    </div>
+                    <div class="c-section-partner__item">
+                        <img src="assets/images/partners/xboxone.svg" alt="Logo de xbox one" srcset="">
+                    </div>
+                    <div class="c-section-partner__item">
+                        <img src="assets/images/partners/logitech.svg" alt="Logo de Logitech" srcset="">
+                    </div>
+                    <div class="c-section-partner__item">
+                        <img src="assets/images/partners/discord.svg" alt="Logo de Twitch" srcset="">
+                    </div>
+                    <div class="c-section-partner__item">
+                        <img src="assets/images/partners/gigabyte.svg" alt="Logo de Gigabyte" srcset="">
+                    </div>
+                    <div class="c-section-partner__item">
+                        <img src="assets/images/partners/intel.svg" alt="Logo de Intel" srcset="">
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!--************* FAQ SECTION ***************-->
+        <section class="c-section-faq">
+            <div class="c-container">
+                <h2 class="c-section-faq__title">FAQ</h2>
+                <div class="c-section-faq__quetions">
+                    <div class="c-faq">
+                        <h3 class="c-faq-title">Comment trouvez et gérez vos précommandes?</h3>
+                        <p class="c-faq-text">Vous pouvez suivre les jeux précommandés et tout ce que vous avez acheté
+                            via le Microsoft Store en vous connectant à votre compte Microsoft. </p>
+                        <p class="c-faq-text"> À partir de là, sélectionnez l'onglet Paiement et facturation, puis
+                            sélectionnez Historique des commandes. Cette page vous permet de visualiser et de gérer
+                            facilement vos précommandes en un seul endroit.</p>
+                        <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
+                                class="fas fa-times fa-2x"></i></button>
+                    </div>
+                    <div class="c-faq">
+                        <h3 class="c-faq-title">Quand puis-je jouer à mon jeu?</h3>
+                        <p class="c-faq-text">Vous pouvez jouer au jeu dès sa sortie dans votre région, généralement peu
+                            après 00h00 heure locale à la date de sortie.</p>
+                        <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
+                                class="fas fa-times fa-2x"></i></button>
+                    </div>
+                    <div class="c-faq">
+                        <h3 class="faq-title">Que se passe-t-il si la date de sortie d'une précommande change?</h3>
+                        <p class="c-faq-text">Les dates de sortie des précommandes que nous indiquons sur notre site
+                            sont basées sur les informations que nous recevons des éditeurs ou des fabricants et peuvent
+                            être sujettes à modification.</p>
+                        <p class="c-faq-text">Si la date de sortie prévue d'un article que vous avez précommandé change,
+                            ou si la sortie est annulée, nous vous en informerons via l'adresse e-mail enregistrée.</p>
+                        <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
+                                class="fas fa-times fa-2x"></i></button>
+                    </div>
+                    <div class="c-faq">
+                        <h3 class="faq-title">Puis-je changer mon mode de paiement?</h3>
+                        <p class="c-faq-text">Si vous étiez connecté lorsque vous avez effectué votre réservation de
+                            précommande, vous devrez être connecté pour modifier votre réservation.</p>
+                        <p class="c-faq-text">Vous pouvez modifier les informations de carte de crédit associées à votre
+                            réservation de précommande à tout moment jusqu'à 7 jours avant la date de sortie indiquée du
+                            produit.</p>
+                        <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
+                                class="fas fa-times fa-2x"></i></button>
+                    </div>
+                    <div class="c-faq">
+                        <h3 class="c-faq-title">Comment annuler une précommande sur le Store?</h3>
+                        <p class="c-faq-text">Lorsque vous précommandez un jeu, votre portefeuille ou votre mode de
+                            paiement sera débité.</p>
+                        <p class="c-faq-text"> Si vous changez d'avis avant la sortie du contenu, vous pourrez annuler
+                            la précommande et recevoir un remboursement.</p>
+                        <p class="c-faq-text"> Si le jeu est sorti et que le téléchargement du contenu n'a pas commencé
+                            sur votre console PlayStation, vous pourrez annuler et demander un remboursement dans les 14
+                            jours suivant la précommande.</p>
+                        <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
+                                class="fas fa-times fa-2x"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--************* FOOTER ***************-->
+    <footer class="c-footer">
+        <div class="c-container">
+            <h2>Game Overview</h2>
+            <ul class="c-section-overview__items-wrapper">
+                <li class="c-section-overview__item">
+                    <img src="assets/images/overview/overview-1.jpg" alt="" srcset="">
+                    <div class="c-section-overview__content">
+                        <h3>OPEN WORLD MULTIPLAYER</h3>
+                        <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
+                            fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
+                            cult followers. In the biggest Far Cry release ever, you'll have everything at
+                            your disposal – from hired guns to hired fangs and the baddest arsenal this side
+                            of the Mississippi.
+                        </p>
+                    </div>
+                </li>
+                <li class="c-section-overview__item c-section-overview--reverse">
+                    <div class="c-section-overview__content">
+                        <h3>A WORLD THAT HITS BACK</h3>
+                        <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
+                            fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
+                            cult followers. In the biggest Far Cry release ever, you'll have everything at
+                            your disposal – from hired guns to hired fangs and the baddest arsenal this side
+                            of the Mississippi.
+                        </p>
+                    </div>
+                    <img src="assets/images/overview/overview-2.jpg" alt="" srcset="">
+                </li>
+                <li class="c-section-overview__item">
+                    <img src="assets/images/overview/overview-3.jpg" alt="" srcset="">
+                    <div class="c-section-overview__content">
+                        <h3>ACTIVITIES</h3>
+                        <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
+                            fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
+                            cult followers. In the biggest Far Cry release ever, you'll have everything at
+                            your disposal – from hired guns to hired fangs and the baddest arsenal this side
+                            of the Mississippi.
+                        </p>
+                    </div>
+                </li>
+                <li class="c-section-overview__item c-section-overview--reverse">
+                    <div class="c-section-overview__content">
+                        <h3>OPEN WORLD MULTIPLAYER</h3>
+                        <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
+                            fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
+                            cult followers. In the biggest Far Cry release ever, you'll have everything at
+                            your disposal – from hired guns to hired fangs and the baddest arsenal this side
+                            of the Mississippi.
+                        </p>
+                    </div>
+                    <img src="assets/images/overview/overview-4.jpg" alt="" srcset="">
+                </li>
+            </ul>
+        </div>
         </section>
 
         <section class="c-section-characters">
@@ -238,57 +329,57 @@
                 <h2 class="c-section-faq__title">FAQ</h2>
             </div>
         </section>
-    </main>
+        </main>
 
-    <footer class="c-footer">
-        <div class="c-container">
-            <div class="c-footer__content">
-                <div class="c-footer__pegi">
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Acceder à Pegi Info">
-                        <img src="assets/images/pegi-18.svg" alt="" height="80">
+        <footer class="c-footer">
+            <div class="c-container">
+                <div class="c-footer__content">
+                    <div class="c-footer__pegi">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Acceder à Pegi Info">
+                            <img src="assets/images/pegi-18.svg" alt="" height="80">
+                        </a>
+                    </div>
+                    <ul class="c-footer__social">
+                        <li class="c-footer__social-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/logo/social-media/facebook.svg" alt="" srcset="" width="30"
+                                    height="74">
+                            </a>
+                        </li>
+                        <li class="c-footer__social-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/logo/social-media/twitter.svg" alt="" srcset="" width="30"
+                                    height="74">
+                            </a>
+                        </li>
+                        <li class="c-footer__social-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/logo/social-media/instagram.svg" alt="" srcset="" width="30"
+                                    height="74">
+                            </a>
+                        </li>
+                        <li class="c-footer__social-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/logo/social-media/youtube.svg" alt="" srcset="" width="30"
+                                    height="74">
+                            </a>
+                        </li>
+                        <li class="c-footer__social-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/logo/social-media/twitch.svg" alt="" srcset="" width="30"
+                                    height="74">
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" aria-label="Acceder à Rockstar Games" class="c-footer__rockstar">
+                        <img src="assets/images/logo/rockstar-games-black.svg" alt="" srcset="" width="80">
                     </a>
                 </div>
-                <ul class="c-footer__social">
-                    <li class="c-footer__social-item">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/logo/social-media/facebook.svg" alt="" srcset="" width="30"
-                                height="74">
-                        </a>
-                    </li>
-                    <li class="c-footer__social-item">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/logo/social-media/twitter.svg" alt="" srcset="" width="30"
-                                height="74">
-                        </a>
-                    </li>
-                    <li class="c-footer__social-item">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/logo/social-media/instagram.svg" alt="" srcset="" width="30"
-                                height="74">
-                        </a>
-                    </li>
-                    <li class="c-footer__social-item">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/logo/social-media/youtube.svg" alt="" srcset="" width="30"
-                                height="74">
-                        </a>
-                    </li>
-                    <li class="c-footer__social-item">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/logo/social-media/twitch.svg" alt="" srcset="" width="30"
-                                height="74">
-                        </a>
-                    </li>
-                </ul>
-                <a href="#" aria-label="Acceder à Rockstar Games" class="c-footer__rockstar">
-                    <img src="assets/images/logo/rockstar-games-black.svg" alt="" srcset="" width="80">
-                </a>
+                <p class="c-footer__mention">@Copyright 2022 - RockStarGames</p>
             </div>
-            <p class="c-footer__mention">@Copyright 2022 - RockStarGames</p>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="assets/script/script.js"></script>
+        <script src="assets/script/script.js"></script>
 </body>
 
 </html>
