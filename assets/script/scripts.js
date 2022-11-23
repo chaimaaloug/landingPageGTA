@@ -12,16 +12,15 @@
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
         dayMonth = "01/01/",
-        birthday = dayMonth + yyyy;
+        releaseDay = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
-      birthday = dayMonth + nextYear;
+    if (today > releaseDay) {
+      releaseDay = dayMonth + nextYear;
     }
     
-    const countDown = new Date(birthday).getTime(),
+    const countDown = new Date(releaseDay).getTime(),
         x = setInterval(function() {    
-  
             const now = new Date().getTime(),
             distance = countDown - now;
   
@@ -42,6 +41,7 @@
 /*========= FAQ LIST ==========*/
 const toggles = document.querySelectorAll('.c-faq-toggle');
 toggles.forEach(toggle => {
+  console.log("sdhsdhsjg")
     toggle.addEventListener('click', () => {
         toggle.parentNode.classList.toggle('active');
     });
@@ -51,6 +51,19 @@ toggles.forEach(toggle => {
 /*======== AGE VERIFICATION ==========*/
 
 
-
+/*======== SLIDER SECTION ==========*/
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 /*======== RESPONSIVE MENU ===========*/

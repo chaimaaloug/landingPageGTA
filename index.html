@@ -13,6 +13,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         referrerpolicy="no-referrer" />
+            <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>GTA 6 - Landing Page</title>
@@ -36,35 +38,40 @@
                         <ul>
                             <li><a href="#">Versions</a></li>
                             <li><a href="#">Fonctionnalités</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#faq">FAQ</a></li>
                         </ul>
                     </nav>
-                    <div>
-                        <select name="lang" id="lang">
-                            <option value="fr">Fr</option>
-                            <option value="eng">Eng</option>
-                        </select>
-                        <button type="button" class="preorderBotton">Précommander</button>
+                    <div class="langs">
+                        <a href="#" language="english">ENG</a>
+                        <a href="#" language="french" class="active">FR</a>
                     </div>
+                    <button type="button" class="preorderBotton">Précommander</button>
                 </div>
                 <div class="hero-text">
-                    <img src="assets/images/logo/gta-6.svg" alt="Logo de GTA 6" class="hero-text-gta6logo">
                     <div class="">
+                        <img src="assets/images/logo/gta-6.svg" alt="Logo de GTA 6" class="hero-text-gta6logo">
                         <h1 class="hero-text-title">Sortie prévue le 01 Janvier 2023</h1>
                         <div id="countdown">
                             <ul>
-                                <li><span id="days"></span>JOURS</li>
-                                <li><span id="hours"></span>HEURES</li>
-                                <li><span id="minutes"></span>MINUTES</li>
-                                <li><span id="seconds"></span>Secondes</li>
+                                <li><span id="days"></span></li>
+                                <li><span id="hours"></span></li>
+                                <li><span id="minutes"></span></li>
+                                <li><span id="seconds"></span></li>
                             </ul>
                         </div>
+                        <div class="contdownDesc">
+                            <p>JOURS</p>
+                            <p>HEURES</p>
+                            <p>MINUTES</p>
+                            <p>SECONDES</p>
+                        </div>
+                        <button type="button" class="preorderBotton" id="open-modal">Précommander</button>
                     </div>
-                    <button type="button" class="preorderBotton" id="open-modal">Précommander</button>
                 </div>
             </div>
         </section>
 
+        <!--************* INTRO SECTION ***************-->
         <section class="c-section-intro">
             <div class="c-section-intro__content c-container c-container--sm">
                 <h2 class="c-section-intro__title">Welcome to Vice City</h2>
@@ -78,10 +85,11 @@
                     Current players can transfer both GTAV Story Mode progress and GTA Online characters and
                     progression to PlayStation 5 and Xbox Series X|S with a one-time migration.
                 </p>
-                <img src="assets/images/intro/intro.png" alt="" width="900" height="690">
+                <img src="assets/images/intro/intro.png" alt="Introduction de GTA 6" width="900" height="690">
             </div>
         </section>
 
+        <!--************* VIDEO SECTION ***************-->
         <section class="c-section-video">
             <div class="c-section-video__content c-container">
                 <iframe class="c-video" width="560" height="315" src="https://www.youtube.com/embed/MUvwkA7O0e8"
@@ -91,6 +99,7 @@
             </div>
         </section>
 
+        <!--************* OVERVIEW SECTION ***************-->
         <section class="c-section-overview">
             <div class="c-container">
                 <h2 class="c-section-overview__title">Game Overview</h2>
@@ -148,54 +157,73 @@
             </div>
         </section>
 
-
+        <!--************* CHARACTERS SECTION ***************-->
         <section class="c-section-characters">
             <div class="c-container">
                 <h2 class="c-section-characters__title">Personnages</h2>
-                <div class="c-section-characters__content">
-                    <img src="assets/images/characters/bonnie.png" alt="" srcset="" width="452" height="631">
-                    <div class="c-section-characters__text">
-                        <h3><span>Bonnie</span> Parker</h3>
-                        <p>
-                            The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                            fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of cult
-                            followers. In the biggest Far Cry release ever, you'll have everything at your
-                            disposal – from hired guns to hired fangs and the baddest arsenal this side of the
-                            Mississippi.
-                        </p>
-                        <button class="c-section-characters__button">Voir Clyde</button>
+                <div class="c-section-characters__content mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="slide swiper-slide">
+                            <img src="assets/images/characters/bonnie.png" class="c-section-character__img image" alt="Image de Bonnie Parker" srcset="">
+                            <div class="c-section-characters__text">
+                               <h3 class="c-section-character__title"><span style="color:#34B4CE">Bonnie</span> Parker</h3>
+                                <p class="c-section-character__desc">
+                                    The fate of Hope County is in your hands. Take on the cult solo or team up with a
+                                    fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of cult
+                                    followers. In the biggest Far Cry release ever, you'll have everything at your
+                                    disposal from hired guns to hired fangs and the baddest arsenal this side of the
+                                    Mississippi.
+                                </p>
+                                <button class="c-section-character__button">Voir Clyde</button>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="assets/images/characters/clyde.png" class="c-section-character__img image" alt="Image de Clyde Barrow"/>
+                            <div class="c-section-characters__text">
+                                <h3 class="c-section-character__title"><span style="color:#D928F2">Clyde</span> Barrow</h3>
+                                <p class="c-section-character__desc">
+                                    The fate of Hope County is in your hands. Take on the cult solo or team up with a 
+                                    fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of cult
+                                    followers. In the biggest Far Cry release ever, you'll have everything at your 
+                                    disposal from hired guns to hired fangs and the baddest arsenal this side of 
+                                    the Mississippi.
+                                </p>
+                                <button class="c-section-character__button clyde-btn">Voir Bonnie</button>
+                            </div>
+                        </div>                        
                     </div>
+                    <div class="swiper-button-next nav-btn"></div>
+                    <div class="swiper-button-prev nav-btn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </section>
+        </section> 
 
+
+        <!--************* VERSION SECTION ***************-->
         <section class="c-section-version">
             <div class="c-container">
                 <h2 class="c-section-version__title">Précommandez dès maintenant</h2>
-                <div>
-                    <div>
-                        <img src="" alt="" srcset="">
-                        <p>Grand Theft Auto VI</p>
-                        <ul>
+                <div class="c-section-version__container">
+                    <div class="c-section-version__left">
+                        <img src="assets/images/logo/gta-6.svg" class="c-section-version__logo" alt="Logo de GTA6" srcset="">
+                        <h3 class="c-section-version__left--title">Grand Theft Auto VI</h3>
+                        <ul class="c-section-version__left--plateforme">
                             <li>PS5</li>
                             <li>XBOX</li>
                             <li>PC</li>
                         </ul>
                         <div>
-                            <button>SÉLECTIONNER UNE PLATEFORME</button>
+                            <button class="c-section-version__btn">SÉLECTIONNER UNE PLATEFORME</button>
                         </div>
                     </div>
-                    <div>
-                        <h3>Bonus de lancement</h3>
-                        <p>
+                    <div class="c-section-version__right">
+                        <h3 class="c-section-version__right--title">Bonus de lancement</h3>
+                        <p class="c-section-version__right--text">
                             Remind me to thank John for a lovely weekend. Checkmate... My dad once told me,
-                            laugh and
-                            the
-                            world laughs with you, Cry, and I'll give you something to cry about you little
-                            bastard! God
-                            help us, we're in the hands of engineers. Just my luck, no ice.
+                            laugh.
                         </p>
-                        <div>
+                        <div class="c-section-version__right--bonus">
                             <img src="" alt="" width="150" height="150">
                             <img src="" alt="" width="150" height="150">
                             <img src="" alt="" width="150" height="150">
@@ -235,7 +263,7 @@
         </section>
 
         <!--************* FAQ SECTION ***************-->
-        <section class="c-section-faq">
+        <section id="faq" class="c-section-faq">
             <div class="c-container">
                 <h2 class="c-section-faq__title">FAQ</h2>
                 <div class="c-section-faq__quetions">
@@ -344,6 +372,8 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="assets/script/swiper-bundle.min.js"></script>
     <script src="assets/script/scripts.js"></script>
 </body>
 
