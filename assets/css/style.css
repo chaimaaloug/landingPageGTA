@@ -68,11 +68,6 @@ a.active {
     background: var(--clr-primary);
 }
 
-a:hover {
- 
-}
-
-
 /*======== CONTAINER =========*/
 .c-container {
     max-width: 1200px;
@@ -116,7 +111,6 @@ a:hover {
     font-size: 20px;
     background-color: var(--clr-primary);
     color: var(--clr-white);
-    border-radius: 5px;
     box-shadow: 10px 8px 2px 1px var(--clr-secondary);    
     cursor: pointer;
 }
