@@ -49,16 +49,7 @@ ul {
     display: flex;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--clr-white);
-    padding: 0.5rem;
-    display: block;
-    font-size: 20px;
-    margin-left: 1.89rem;
-}
-
-.langs {
+.langs{
     text-align: center;
     margin: 10px 20px;
     padding: 12px 24px;
@@ -102,6 +93,7 @@ a.active {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    padding: 2rem;
 }
 
 .hero-nav-bar {
@@ -122,13 +114,21 @@ a.active {
 .preorderBotton {
     font-weight: bold;
     padding: 1rem 2rem;
-    font-size: 28px;
+    font-size: 20px;
     background-color: var(--clr-primary);
     color: var(--clr-white);
+    box-shadow: 10px 8px 2px 1px var(--clr-secondary);    
+    cursor: pointer;
+}
+
+.preorderBotton:hover {
+    background-color: var(--clr-secondary);
+    box-shadow: 10px 8px var(--clr-primary);
+ 
 }
 
 .hero-text-gta6logo {
-    width: 345px;
+    width: 300px;
 }
 
 .hero-text {
@@ -138,15 +138,18 @@ a.active {
     align-items: flex-start;
 
 }
+.hero-text__box {
+   margin: 3rem 0;
+}
 
 .hero-text-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .preorderBotton,
 .hero-text-title {
-    margin: 3.87rem 0;
+    margin: 3rem 0;
 }
 
 #countdown {
@@ -164,18 +167,19 @@ a.active {
 #seconds {
     border-radius: 15px;
     font-size: 20px;
-    padding: 1.78rem 1.7rem;
-    color: var(--clr-black);
+    font-weight: 500;
+    padding: 1.34rem 1.7rem;
+    color: var(--clr-black); 
     background-color: var(--clr-white);
 }
 
 .contdownDesc {
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     display: flex;
     justify-content: space-around;
-    margin-left: 2rem;
+    margin-right: -1.67rem;
 }
 
 /*======== INTRO SECTION =========*/
@@ -215,7 +219,6 @@ a.active {
     background-color: #fff;
     box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
 }
-
 
 .c-section-intro__title::after {
     position: absolute;

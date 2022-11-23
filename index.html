@@ -13,10 +13,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         referrerpolicy="no-referrer" />
-            <!-- Swiper CSS -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="jquery-3.6.1.min.js"></script>
     <title>GTA 6 - Landing Page</title>
 </head>
 
@@ -37,7 +38,8 @@
                     <nav>
                         <ul>
                             <li><a href="#">Versions</a></li>
-                            <li><a href="#">Fonctionnalités</a></li>
+                            <li><a href="#" class="linkTwo">Fonctionnalités</a></li>
+                            <li><a href="#partners" class="linkThree">Partenaires</a></li>
                             <li><a href="#faq">FAQ</a></li>
                         </ul>
                     </nav>
@@ -50,22 +52,24 @@
                 <div class="hero-text">
                     <div class="">
                         <img src="assets/images/logo/gta-6.svg" alt="Logo de GTA 6" class="hero-text-gta6logo">
-                        <h1 class="hero-text-title">Sortie prévue le 01 Janvier 2023</h1>
-                        <div id="countdown">
-                            <ul>
-                                <li><span id="days"></span></li>
-                                <li><span id="hours"></span></li>
-                                <li><span id="minutes"></span></li>
-                                <li><span id="seconds"></span></li>
-                            </ul>
+                        <div class="hero-text__box">
+                            <h1 class="hero-text-title">Sortie prévue le 01 Janvier 2023</h1>
+                            <div id="countdown">
+                                <ul>
+                                    <li><span id="days"></span></li>
+                                    <li><span id="hours"></span></li>
+                                    <li><span id="minutes"></span></li>
+                                    <li><span id="seconds"></span></li>
+                                </ul>
+                            </div>
+                            <div class="contdownDesc">
+                                <p class="day">JOURS</p>
+                                <p class="hours">HEURES</p>
+                                <p class="minutes">MINUTES</p>
+                                <p class="secondes">SECONDES</p>
+                            </div>
                         </div>
-                        <div class="contdownDesc">
-                            <p>JOURS</p>
-                            <p>HEURES</p>
-                            <p>MINUTES</p>
-                            <p>SECONDES</p>
-                        </div>
-                        <button type="button" class="preorderBotton" id="open-modal">Précommander</button>
+                        <button type="button" class="preorderBotton mainBtn">Précommander</button>
                     </div>
                 </div>
             </div>
@@ -74,16 +78,17 @@
         <!--************* INTRO SECTION ***************-->
         <section class="c-section-intro">
             <div class="c-section-intro__content c-container c-container--sm">
-                <h2 class="c-section-intro__title">Welcome to Vice City</h2>
-                <p>
-                    When a young street hustler, a retired bank robber, and a terrifying psychopath find
-                    themselves entangled with some of the most frightening and deranged elements of the criminal
-                    underworld, the U.S. government, and the entertainment industry, they must pull off a series
-                    of dangerous heists to survive in a ruthless city in which they can trust nobody — least of
-                    all each other.
+                <h2 class="c-section-intro__title">Bienvenue à Vice City</h2>
+                <p class="c-section-intro__desc">
+                    Lorsqu'un jeune arnaqueur de rue, un braqueur de banque à la retraite et un psychopathe terrifiant se 
+                    retrouvent mêlés à certains des éléments les plus effrayants et les plus dérangés de la pègre, du 
+                    gouvernement américain et de l'industrie du divertissement, ils doivent réussir une série de cambriolages
+                    dangereux. pour survivre dans une ville impitoyable dans laquelle ils ne peuvent faire confiance
+                    à personne - encore moins les uns aux autres.
                     <br><br>
-                    Current players can transfer both GTAV Story Mode progress and GTA Online characters and
-                    progression to PlayStation 5 and Xbox Series X|S with a one-time migration.
+                    Les joueurs actuels peuvent transférer à la fois la progression du mode Histoire de GTA VI 
+                    et les personnages et la progression de GTA Online vers PlayStation 5 et Xbox Series
+                    X|S avec une migration unique.
                 </p>
                 <img src="assets/images/intro/intro.png" alt="Introduction de GTA 6" width="900">
             </div>
@@ -104,29 +109,29 @@
         <!--************* OVERVIEW SECTION ***************-->
         <section class="c-section-overview">
             <div class="c-container">
-                <h2 class="c-section-overview__title">Game Overview</h2>
+                <h2 class="c-section-overview__title">Aperçu du jeu</h2>
                 <ul class="c-section-overview__items-wrapper">
                     <li class="c-section-overview__item">
                         <img class="c-section-overview__img" src="assets/images/overview/overview-1.jpg" alt=""
                             srcset="" width="691" height="397">
                         <div class="c-section-overview__content">
-                            <h3>OPEN WORLD MULTIPLAYER</h3>
-                            <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
-                                cult followers. In the biggest Far Cry release ever, you'll have everything at
-                                your disposal – from hired guns to hired fangs and the baddest arsenal this side
-                                of the Mississippi.
+                            <h3 class="c-section-overview__title-1">MULTIJOUEUR EN MONDE OUVERT</h3>
+                            <p class="c-section-overview__desc-1"> Le destin de Hope County est entre vos mains. Affrontez le culte en solo ou faites équipe avec un
+                                compatriote résistant en mode coopératif et faire des ravages sur Joseph Seed et sa bande de
+                                adeptes de la secte. Dans la plus grande version de Far Cry à ce jour, vous aurez tout sur
+                                votre disposition - des armes à feu aux crocs en location et le plus mauvais arsenal de ce côté
+                                du Mississippi.
                             </p>
                         </div>
                     </li>
                     <li class="c-section-overview__item c-section-overview--reverse">
                         <div class="c-section-overview__content">
-                            <h3>A WORLD THAT HITS BACK</h3>
-                            <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
-                                cult followers. In the biggest Far Cry release ever, you'll have everything at
-                                your disposal – from hired guns to hired fangs and the baddest arsenal this side
-                                of the Mississippi.
+                            <h3 class="c-section-overview__title-2">UN MONDE QUI REPREND</h3>
+                            <p class="c-section-overview__desc-2">Le destin de Hope County est entre vos mains. Affrontez le culte en solo ou faites équipe avec un
+                                compatriote résistant en mode coopératif et faire des ravages sur Joseph Seed et sa bande de
+                                adeptes de la secte. Dans la plus grande version de Far Cry à ce jour, vous aurez tout sur
+                                votre disposition - des armes à feu aux crocs en location et le plus mauvais arsenal de ce côté
+                                du Mississippi.
                             </p>
                         </div>
                         <img class="c-section-overview__img" src="assets/images/overview/overview-2.jpg" alt="" srcset="" width="691" height="397">
@@ -134,23 +139,23 @@
                     <li class="c-section-overview__item">
                         <img class="c-section-overview__img" src="assets/images/overview/overview-3.jpg" alt="" srcset="" width="691" height="397">
                         <div class="c-section-overview__content">
-                            <h3>ACTIVITIES</h3>
-                            <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
-                                cult followers. In the biggest Far Cry release ever, you'll have everything at
-                                your disposal – from hired guns to hired fangs and the baddest arsenal this side
-                                of the Mississippi.
+                            <h3 class="c-section-overview__title-3">ACTIVITÉS</h3>
+                            <p class="c-section-overview__desc-3">Le destin de Hope County est entre vos mains. Affrontez le culte en solo ou faites équipe avec un
+                                compatriote résistant en mode coopératif et faire des ravages sur Joseph Seed et sa bande de
+                                adeptes de la secte. Dans la plus grande version de Far Cry à ce jour, vous aurez tout sur
+                                votre disposition - des armes à feu aux crocs en location et le plus mauvais arsenal de ce côté
+                                du Mississippi.
                             </p>
                         </div>
                     </li>
                     <li class="c-section-overview__item c-section-overview--reverse">
                         <div class="c-section-overview__content">
-                            <h3>OPEN WORLD MULTIPLAYER</h3>
-                            <p>The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of
-                                cult followers. In the biggest Far Cry release ever, you'll have everything at
-                                your disposal – from hired guns to hired fangs and the baddest arsenal this side
-                                of the Mississippi.
+                            <h3 class="c-section-overview__title-4">MULTIJOUEUR EN MONDE OUVERT</h3>
+                            <p class="c-section-overview__desc-4">Le destin de Hope County est entre vos mains. Affrontez le culte en solo ou faites équipe avec un
+                                compatriote résistant en mode coopératif et faire des ravages sur Joseph Seed et sa bande de
+                                adeptes de la secte. Dans la plus grande version de Far Cry à ce jour, vous aurez tout sur
+                                votre disposition - des armes à feu aux crocs en location et le plus mauvais arsenal de ce côté
+                                du Mississippi.
                             </p>
                         </div>
                         <img class="c-section-overview__img" src="assets/images/overview/overview-4.jpg" alt="" srcset="" width="691" height="397">
@@ -169,28 +174,28 @@
                             <img src="assets/images/characters/bonnie.png" class="c-section-character__img image" alt="Image de Bonnie Parker" srcset="">
                             <div class="c-section-characters__text">
                                <h3 class="c-section-character__title"><span style="color:#34B4CE">Bonnie</span> Parker</h3>
-                                <p class="c-section-character__desc">
-                                    The fate of Hope County is in your hands. Take on the cult solo or team up with a
-                                    fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of cult
-                                    followers. In the biggest Far Cry release ever, you'll have everything at your
-                                    disposal from hired guns to hired fangs and the baddest arsenal this side of the
-                                    Mississippi.
+                                <p class="c-section-character__desc descOne">
+                                    Le destin de Hope County est entre vos mains. Affrontez le culte en solo ou faites équipe avec un
+                                    compatriote résistant en mode coopératif et faire des ravages sur Joseph Seed et sa bande de
+                                    adeptes de la secte. Dans la plus grande version de Far Cry à ce jour, vous aurez tout sur
+                                    votre disposition - des armes à feu aux crocs en location et le plus mauvais arsenal de ce côté
+                                    du Mississippi.
                                 </p>
-                                <button class="c-section-character__button">Voir Clyde</button>
+                                <button class="c-section-character__button btnOne">Voir Clyde</button>
                             </div>
                         </div>
                         <div class="slide swiper-slide">
                             <img src="assets/images/characters/clyde.png" class="c-section-character__img image" alt="Image de Clyde Barrow"/>
                             <div class="c-section-characters__text">
                                 <h3 class="c-section-character__title"><span style="color:#D928F2">Clyde</span> Barrow</h3>
-                                <p class="c-section-character__desc">
-                                    The fate of Hope County is in your hands. Take on the cult solo or team up with a 
-                                    fellow resister in co-op mode and wreak havoc upon Joseph Seed and his band of cult
-                                    followers. In the biggest Far Cry release ever, you'll have everything at your 
-                                    disposal from hired guns to hired fangs and the baddest arsenal this side of 
-                                    the Mississippi.
+                                <p class="c-section-character__desc descTwo">
+                                    Le destin de Hope County est entre vos mains. Affrontez le culte en solo ou faites équipe avec un
+                                    compatriote résistant en mode coopératif et faire des ravages sur Joseph Seed et sa bande de
+                                    adeptes de la secte. Dans la plus grande version de Far Cry à ce jour, vous aurez tout sur
+                                    votre disposition - des armes à feu aux crocs en location et le plus mauvais arsenal de ce côté
+                                    du Mississippi.
                                 </p>
-                                <button class="c-section-character__button clyde-btn">Voir Bonnie</button>
+                                <button class="c-section-character__button btnTwo">Voir Bonnie</button>
                             </div>
                         </div>                        
                     </div>
@@ -200,7 +205,6 @@
                 </div>
             </div>
         </section> 
-
 
         <!--************* VERSION SECTION ***************-->
         <section class="c-section-version">
@@ -222,8 +226,7 @@
                     <div class="c-section-version__right">
                         <h3 class="c-section-version__right--title">Bonus de lancement</h3>
                         <p class="c-section-version__right--text">
-                            Remind me to thank John for a lovely weekend. Checkmate... My dad once told me,
-                            laugh.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, culpa. At mollitia, tempora impedit.
                         </p>
                         <div class="c-section-version__right--bonus">
                             <img src="" alt="" width="150">
@@ -236,9 +239,8 @@
 
         </section>
 
-
         <!--************* PARTNERS SECTION ***************-->
-        <section class="c-section-partner">
+        <section class="c-section-partner" id="partners">
             <div class="c-container">
                 <h2 class="c-section-partner__title">Nos Partenaires</h2>
                 <div class="c-section-partner__list">
@@ -270,59 +272,46 @@
                 <h2 class="c-section-faq__title">FAQ</h2>
                 <div class="c-section-faq__quetions">
                     <div class="c-faq">
-                        <h3 class="c-faq-title">Comment trouvez et gérez vos précommandes?</h3>
-                        <p class="c-faq-text">Vous pouvez suivre les jeux précommandés et tout ce que vous avez acheté
+                        <h3 class="c-faq-title one">Comment trouvez et gérez vos précommandes?</h3>
+                        <p class="c-faq-text respOne">Vous pouvez suivre les jeux précommandés et tout ce que vous avez acheté
                             via le Microsoft Store en vous connectant à votre compte Microsoft. </p>
-                        <p class="c-faq-text"> À partir de là, sélectionnez l'onglet Paiement et facturation, puis
-                            sélectionnez Historique des commandes. Cette page vous permet de visualiser et de gérer
-                            facilement vos précommandes en un seul endroit.</p>
                         <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
                                 class="fas fa-times fa-2x"></i></button>
                     </div>
                     <div class="c-faq">
-                        <h3 class="c-faq-title">Quand puis-je jouer à mon jeu?</h3>
-                        <p class="c-faq-text">Vous pouvez jouer au jeu dès sa sortie dans votre région, généralement peu
+                        <h3 class="c-faq-title two">Quand puis-je jouer à mon jeu?</h3>
+                        <p class="c-faq-text respTwo">Vous pouvez jouer au jeu dès sa sortie dans votre région, généralement peu
                             après 00h00 heure locale à la date de sortie.</p>
                         <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
                                 class="fas fa-times fa-2x"></i></button>
                     </div>
                     <div class="c-faq">
-                        <h3 class="faq-title">Que se passe-t-il si la date de sortie d'une précommande change?</h3>
-                        <p class="c-faq-text">Les dates de sortie des précommandes que nous indiquons sur notre site
+                        <h3 class="faq-title three">Que se passe-t-il si la date de sortie d'une précommande change?</h3>
+                        <p class="c-faq-text respThree">Les dates de sortie des précommandes que nous indiquons sur notre site
                             sont basées sur les informations que nous recevons des éditeurs ou des fabricants et peuvent
                             être sujettes à modification.</p>
-                        <p class="c-faq-text">Si la date de sortie prévue d'un article que vous avez précommandé change,
-                            ou si la sortie est annulée, nous vous en informerons via l'adresse e-mail enregistrée.</p>
                         <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
                                 class="fas fa-times fa-2x"></i></button>
                     </div>
                     <div class="c-faq">
-                        <h3 class="faq-title">Puis-je changer mon mode de paiement?</h3>
-                        <p class="c-faq-text">Si vous étiez connecté lorsque vous avez effectué votre réservation de
-                            précommande, vous devrez être connecté pour modifier votre réservation.</p>
-                        <p class="c-faq-text">Vous pouvez modifier les informations de carte de crédit associées à votre
-                            réservation de précommande à tout moment jusqu'à 7 jours avant la date de sortie indiquée du
-                            produit.</p>
-                        <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
-                                class="fas fa-times fa-2x"></i></button>
-                    </div>
-                    <div class="c-faq">
-                        <h3 class="c-faq-title">Comment annuler une précommande sur le Store?</h3>
-                        <p class="c-faq-text">Lorsque vous précommandez un jeu, votre portefeuille ou votre mode de
+                        <h3 class="c-faq-title four">Comment annuler une précommande sur le Store?</h3>
+                        <p class="c-faq-text respFour">Lorsque vous précommandez un jeu, votre portefeuille ou votre mode de
                             paiement sera débité.</p>
                         <p class="c-faq-text"> Si vous changez d'avis avant la sortie du contenu, vous pourrez annuler
                             la précommande et recevoir un remboursement.</p>
-                        <p class="c-faq-text"> Si le jeu est sorti et que le téléchargement du contenu n'a pas commencé
-                            sur votre console PlayStation, vous pourrez annuler et demander un remboursement dans les 14
-                            jours suivant la précommande.</p>
+                        <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
+                                class="fas fa-times fa-2x"></i></button>
+                    </div>
+                    <div class="c-faq">
+                        <h3 class="faq-title five">Puis-je changer mon mode de paiement?</h3>
+                        <p class="c-faq-text respFive">Si vous étiez connecté lorsque vous avez effectué votre réservation de
+                            précommande, vous devrez être connecté pour modifier votre réservation.</p>
                         <button class="c-faq-toggle"><i class="fas fa-caret-down fa-2x"></i><i
                                 class="fas fa-times fa-2x"></i></button>
                     </div>
                 </div>
             </div>
         </section>
-
-
 
     </main>
 

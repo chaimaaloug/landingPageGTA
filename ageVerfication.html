@@ -28,21 +28,23 @@
                         <legend class="c-form__text">Veuillez entrer votre date de naissance :</legend>
                         <div class="c-form__container">
                             <div>
-                                <input type="number" step="1" id="day" min="1" max="31" maxlength="2" placeholder="Jour" required />
+                                <input type="number" step="1" name="dob-day" id="dob-day" placeholder="Jour" required />
                             </div>
                             <div>
-                                <input type="number" step="1" id="month" min="1" max="12" maxlength="2" placeholder="Mois" required />
+                                <input type="number" step="1" name="dob-month" id="dob-month" maxlength="2" placeholder="Mois" required />
                             </div>
                             <div>
-                                <input type="number" step="1" id="year" min="1900" max="1901" maxlength="4" placeholder="Année" required />
+                                <input type="number" step="1" name="dob-year" id="dob-year" placeholder="Année" required />
                             </div>
-                            <button type="button" class="c-validate-btn">Valider</button>
+                            <button type="submit" class="c-validate-btn"><a href="index.html">Valider</a></button>
                         </div>
                     </fieldset>
                 </form>
                 <a href="index.html" class="c-exit-link">Exit</a>            
             </div>
         </section>
+
+        
     </main>
     <script src="assets/script/scripts.js"></script>
 </body>
