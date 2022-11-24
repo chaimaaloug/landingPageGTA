@@ -73,9 +73,7 @@ a.active {
         display: none;
     }
 
-    .hero-nav-bar-logo {
-        display: none;
-    }
+
 
     .menuBotton {
         display: none; 
@@ -95,7 +93,6 @@ a.active {
         font-size: 13px;
     }
 
-  
 }
 
 /*======== CONTAINER =========*/
