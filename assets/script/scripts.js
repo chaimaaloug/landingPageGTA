@@ -70,6 +70,7 @@ var swiper = new Swiper(".mySwiper", {
 /*======== TRANSLATION SCRIPT ===========*/
 let langs = document.querySelector(".langs"),
      link = document.querySelectorAll("a"),
+     linkOne = document.querySelector(".linkOne"),
      linkTwo = document.querySelector(".linkTwo"),
      linkThree = document.querySelector(".linkThree"),
      mainTitle = document.querySelector(".hero-text-title");
@@ -138,6 +139,7 @@ link.forEach(el=>{
 
           mainTitle.textContent = data[attr].mainTitle
           mainBtn.textContent = data[attr].mainBtn
+          linkOne.textContent = data[attr].linkOne
           linkTwo.textContent = data[attr].linkTwo
           linkThree.textContent = data[attr].linkThree
           preorderBotton.textContent = data[attr].preorderBotton
@@ -205,6 +207,7 @@ let data = {
           bonusTitle:"Launch Bonus",
           bonusDesc:"For all pre-orders you will receive $1,000,000 to spend in the game. That is $500,000 for your characters in GTA Online and $500,000 which will be awarded to Franklin solo at the start of the game. If you pre-order the game before December 1 on the Rockstar website, you will also have games offered in digital version from the following list :",
 
+          linkOne: "Overview",
           linkTwo: "Features",
           linkThree: "Partners",
           day: "DAYS",
@@ -258,6 +261,7 @@ let data = {
           bonusTitle:"Bonus de lancement",
           bonusDesc:"Pour toutes pré-commandes vous recevrez 1.000.000 de dollars à dépenser dans le jeu. Soit 500.000$ pour votre personnages dans GTA Online et 500.000$ qui sera attribués à Franklin en solo au début du jeu. Si vous pré-commandez le jeu avant le 1 Décembre sur le site de Rockstar, vous aurez en plus de ça des jeux offert en version digitale parmi la liste suivante : ",
 
+          linkOne: "Aperçu",
           linkTwo: "Fonctionnalités",
           linkThree: "Partenaires",
           day: "JOURS",
