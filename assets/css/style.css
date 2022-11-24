@@ -49,12 +49,6 @@ ul {
     display: flex;
 }
 
-.langs{
-    text-align: center;
-    margin: 10px 20px;
-    padding: 12px 24px;
-}
-
 .langs a.active {
     border-radius: 5px;
     background: var(--clr-primary);
@@ -68,12 +62,9 @@ a {
     font-size: 20px;
 }
 
+
 @media only screen and (max-width: 960px) {
     .u-hidden-mobile {
-        display: none;
-    }
-
-    .hero-nav-bar-logo {
         display: none;
     }
 
@@ -87,14 +78,19 @@ a {
        text-align: center;
     }
 
-    .langs {
-        display: none;
-    }
-
     a {
         font-size: 13px;
     }
 
+    .hero-nav-bar-logo {
+        display: none;
+    }
+
+    .hero-nav-bar__bottom ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
   
 }
 
@@ -117,40 +113,46 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 4.8rem;
 }
 
 .hero-nav-bar {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding-bottom: 4.8rem;
+    row-gap: 1.6rem;
+}
+
+.hero-nav-bar__top {
+    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 
 .hero-nav-bar__logo-wrapper {
     display: flex;
-    flex-shrink: 0;
+    align-items: center;
 }
 
 .hero-nav-bar__right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 1.6rem;
-}
-
-
-.hero-nav-bar__logo-wrapper a {
-    text-decoration: none;
+    gap: 3.2rem;
 }
 
 .hero-nav-bar-logo {
-    width: 290px;
-    margin-bottom: 0.90rem;
+    max-width: 29rem;
+    width: 100%;
 }
 
-.hero-nav-bar-logo-rockstar {
-    width: 34px;
+.hero-nav-bar__logo-wrapper a {
+    display: flex;
+    width: 6rem;
+    flex-shrink: 0;
+    text-decoration: none;
 }
 
 .preorderBotton {
@@ -170,16 +172,26 @@ a {
 }
 
 .hero-text-gta6logo {
-    width: 300px;
+    max-width: 30rem;
+    width: 100%;
 }
 
 .hero-text {
     color: var(--clr-white);
     padding: 0 5.67rem;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-
 }
+
+
+@media only screen and (max-width: 960px) {
+    .hero-text {
+        padding: 0;
+        align-items: center;
+    }    
+}
+
 .hero-text__box {
    margin: 3rem 0;
 }
@@ -189,13 +201,23 @@ a {
     font-weight: bold;
 }
 
-.preorderBotton,
-.hero-text-title {
-    margin: 3rem 0;
+.hero-text-title br {
+    display: none;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .hero-text-title {
+        text-align: center;
+    } 
+
+    .hero-text-title br {
+        display: block;
+    }
 }
 
 #countdown {
-    margin: 6rem 0;
+    margin: 6rem 0 2.4rem 0;
 }
 
 #countdown ul {
@@ -222,6 +244,12 @@ a {
     display: flex;
     justify-content: space-around;
     margin-right: -1.67rem;
+}
+
+@media only screen and (max-width: 960px) {
+    .contdownDesc {
+        font-size: 1.2rem;
+    }
 }
 
 /*======== INTRO SECTION =========*/
