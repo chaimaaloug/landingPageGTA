@@ -99,7 +99,25 @@ a.active {
 .hero-nav-bar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-nav-bar__logo-wrapper {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.hero-nav-bar__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+
+.hero-nav-bar__logo-wrapper a {
+    text-decoration: none;
 }
 
 .hero-nav-bar-logo {
@@ -187,9 +205,9 @@ a.active {
 .c-section-intro {
     padding: 6.4rem 0 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/backgrounds/back-introduction.png');
-    background-position: center top;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     color: var(--clr-white);
 }
 
@@ -204,7 +222,7 @@ a.active {
     font-weight: 700;
     position: relative;
     color: #fff;
-    padding-bottom: 6.4rem;
+    padding-bottom: 7.2rem;
     align-self: flex-start;
 }
 
@@ -212,7 +230,7 @@ a.active {
     content: "";
     display: block;
     position: absolute;
-    bottom: 3.2rem;
+    bottom: 5.4rem;
     max-width: 33.3rem;
     width: 100%;
     height: 0.5rem;
@@ -220,17 +238,14 @@ a.active {
     box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
 }
 
-.c-section-intro__title::after {
-    position: absolute;
-}
 
 /*======== VIDEO SECTION =========*/
 .c-section-video {
     padding: 6.4rem 0;
     background: linear-gradient(180.08deg, rgba(36, 36, 36, 0.9) 33.91%, rgba(60, 60, 60, 0.9) 99.93%), url('../images/gta6-video-bg.jpg');
-    background-position: center top;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .c-section-video__content {
@@ -256,7 +271,11 @@ a.active {
 
 .c-section-overview {
     padding: 6.4rem 0;
-    background: linear-gradient(180deg, rgba(60, 60, 60, 0.9) 22.19%, rgba(167, 70, 181, 0.9) 56.56%, rgba(221, 65, 243, 0.9) 83.65%);
+    background: linear-gradient(180deg, rgba(60, 60, 60, 0.9) 22.19%, rgba(167, 70, 181, 0.9) 56.56%, rgba(221, 65, 243, 0.9) 83.65%), url('../images/backgrounds/overview-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .c-section-overview__title {
@@ -265,14 +284,14 @@ a.active {
     text-align: center;
     position: relative;
     color: #fff;
-    padding-bottom: 6.4rem;
+    padding-bottom: 7.2rem;
 }
 
 .c-section-overview__title:after {
     content: "";
     display: block;
     position: absolute;
-    bottom: 3.2rem;
+    bottom: 5.4rem;
     max-width: 33.3rem;
     width: 100%;
     height: 0.5rem;
@@ -383,21 +402,36 @@ a.active {
 /*======== CHARACTERS SECTION =========*/
 .c-section-characters {
     padding: 6.4rem 0 0 0;
-    background-position: center top;
+    background-image: linear-gradient(180deg, rgba(221, 65, 243, 0.9) 37.81%, rgba(196, 81, 237, 0.9) 100%), url('../images/backgrounds/character-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--clr-white);
-    background-image: linear-gradient(180deg, rgba(221, 65, 243, 0.9) 37.81%, rgba(196, 81, 237, 0.9) 100%), url('../images/backgrounds/back-introduction.png');
 }
 
 .c-section-characters__title {
-    font-size: 4rem;
+    font-size: 4.8rem;
     font-weight: 700;
     text-align: center;
-    margin-left: 3rem;
-    color: var(--clr-black);
-    margin-bottom: 6.2rem;
+    position: relative;
+    color: #000;
+    padding-bottom: 7.2rem;
 }
+
+.c-section-characters__title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5.4rem;
+    max-width: 33.3rem;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #000;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
 
 .c-section-characters__content {
     position: relative;
@@ -405,15 +439,20 @@ a.active {
     overflow: hidden;
 }
 
+.c-section-characters__item {
+    display: flex;
+}
+
+@media only screen and (max-width: 960px) {
+    .c-section-characters__item {
+        flex-direction: column;
+    }
+}
+
 .c-section-character__img {
     width: 390px;
 }
 
-
-.slide .image {
-    height: 600px;
-    width: 450px;
-}
 
 .c-section-characters__text {
     padding: 5rem 4rem;
@@ -492,12 +531,25 @@ a.active {
 }
 
 .c-section-version__title {
-    font-size: 4rem;
+    font-size: 4.8rem;
     font-weight: 700;
-    text-align: left;
-    margin-left: 3rem;
-    color: var(--clr-black);
-    margin-bottom: 3.2rem;
+    text-align: center;
+    position: relative;
+    color: #000;
+    padding-bottom: 7.2rem;
+}
+
+.c-section-version__title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5.4rem;
+    max-width: 33.3rem;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #000;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .c-section-version__container {
@@ -519,7 +571,9 @@ a.active {
 }
 
 .c-section-version__logo {
-    width: 230px;
+    max-width: 230px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .c-section-version__left--title,
@@ -546,7 +600,9 @@ a.active {
 .c-section-version__right--bonus {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
 }
 
 .c-section-version__right--text {

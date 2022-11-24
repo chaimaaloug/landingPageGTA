@@ -192,7 +192,7 @@ link.forEach(el=>{
 
 let data = {
      english: {
-          mainTitle: "Release scheduled for January 01, 2023",
+          mainTitle: "Release scheduled for december 15, 2022",
           mainBtn:"Pre-order",
           preorderBotton: "Pre-order",
           selectPlateform:"SELECT A PLATFORM",
@@ -244,7 +244,7 @@ let data = {
           respFive:"If you were logged in when you made your booking pre-order, you will need to be logged in to modify your reservation.",
      },
      french: {
-          mainTitle: "Sortie prévue le 01 Janvier 2023",
+          mainTitle: "Sortie prévue le 15 décembre 2022",
           preorderBotton: "Précommander",
           mainBtn: "Précommander",
           selectPlateform:"SÉLECTIONNER UNE PLATEFORME",
