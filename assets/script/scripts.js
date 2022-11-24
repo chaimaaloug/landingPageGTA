@@ -136,7 +136,7 @@ link.forEach(el=>{
           el.classList.add("active");
 
           let attr = el.getAttribute("language")
-
+           console.log("fgjdshfgjsf")
           mainTitle.textContent = data[attr].mainTitle
           mainBtn.textContent = data[attr].mainBtn
           linkOne.textContent = data[attr].linkOne
@@ -160,7 +160,7 @@ link.forEach(el=>{
           desc2.textContent = data[attr].desc2
 
           overviewTitle.textContent = data[attr].overviewTitle
-
+          console.log("fgjdshfgjsf")
           overviewTitle1.textContent = data[attr].overviewTitle1
           overviewDesc1.textContent = data[attr].overviewDesc1
           overviewTitle2.textContent = data[attr].overviewTitle2
