@@ -434,6 +434,10 @@ a.active {
     left: 50%;
 }
 
+.slide .image {
+    height: 600px;
+    width: 450px; 
+}
 
 .c-section-characters__content {
     position: relative;
