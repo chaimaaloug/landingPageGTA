@@ -80,6 +80,8 @@ let langs = document.querySelector(".langs"),
 
      preorderTitle = document.querySelector(".c-section-version__title");
      bonusTitle = document.querySelector(".c-section-version__right--title");
+     bonusDesc = document.querySelector(".c-section-version__right--text");
+
      selectPlateform = document.querySelector(".c-section-version__btn");
 
      introTitle = document.querySelector(".c-section-intro__title");
@@ -141,6 +143,8 @@ link.forEach(el=>{
           preorderBotton.textContent = data[attr].preorderBotton
 
           bonusTitle.textContent = data[attr].bonusTitle
+          bonusDesc.textContent = data[attr].bonusDesc
+
           preorderTitle.textContent = data[attr].preorderTitle
           selectPlateform.textContent = data[attr].selectPlateform
 
@@ -199,6 +203,8 @@ let data = {
           preorderTitle:"Pre-order Now",
           clydeBtn: "See Bonnie",
           bonusTitle:"Launch Bonus",
+          bonusDesc:"For all pre-orders you will receive $1,000,000 to spend in the game. That is $500,000 for your characters in GTA Online and $500,000 which will be awarded to Franklin solo at the start of the game. If you pre-order the game before December 1 on the Rockstar website, you will also have games offered in digital version from the following list :",
+
           linkTwo: "Features",
           linkThree: "Partners",
           day: "DAYS",
@@ -250,6 +256,7 @@ let data = {
           selectPlateform:"SÉLECTIONNER UNE PLATEFORME",
           preorderTitle:"Précommandez dès maintenant",
           bonusTitle:"Bonus de lancement",
+          bonusDesc:"Pour toutes pré-commandes vous recevrez 1.000.000 de dollars à dépenser dans le jeu. Soit 500.000$ pour votre personnages dans GTA Online et 500.000$ qui sera attribués à Franklin en solo au début du jeu. Si vous pré-commandez le jeu avant le 1 Décembre sur le site de Rockstar, vous aurez en plus de ça des jeux offert en version digitale parmi la liste suivante : ",
 
           linkTwo: "Fonctionnalités",
           linkThree: "Partenaires",
