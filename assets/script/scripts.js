@@ -304,3 +304,4 @@ let data = {
           respFour:"Lorsque vous précommandez un jeu, votre portefeuille ou votre mode de paiement sera débité.",
      }
 }
+
