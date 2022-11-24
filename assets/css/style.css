@@ -72,6 +72,30 @@ a {
     .u-hidden-mobile {
         display: none;
     }
+
+    .hero-nav-bar-logo {
+        display: none;
+    }
+
+    .menuBotton {
+        display: none; 
+    }
+
+    .hero-nav-bar__right {
+       display: flex;
+       align-items: center;
+       text-align: center;
+    }
+
+    .langs {
+        display: none;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+  
 }
 
 /*======== CONTAINER =========*/
@@ -912,4 +936,5 @@ a {
     text-align: center;
 }
 
-/*======== MEDIA QUERIES =========*/
+/*======== RESPONSIVE NAVIGATION BAR =========*/
+
