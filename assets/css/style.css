@@ -207,6 +207,7 @@ a.active {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/backgrounds/back-introduction.png');
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     color: var(--clr-white);
 }
@@ -245,6 +246,7 @@ a.active {
     background: linear-gradient(180.08deg, rgba(36, 36, 36, 0.9) 33.91%, rgba(60, 60, 60, 0.9) 99.93%), url('../images/gta6-video-bg.jpg');
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
